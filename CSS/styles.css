@@ -1,0 +1,182 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+    overflow-x: hidden; 
+    background-color: #5B86BB;
+}
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    background-color: #181818;
+    color: white;
+    position: fixed;
+    z-index: 1000;;   
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+    width: 50px; /* Ancho del contenedor del logo */
+}
+
+.logo-container img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+
+.logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Color transparente inicialmente */
+    transition: background-color 0.3s ease;
+}
+
+.logo-container:hover::before {
+    content: ''; /* Necesario para que el pseudoelemento se muestre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%; /* Forma circular */
+    background-color: rgba(91, 131, 187, 0.5); /* Color con transparencia */
+    z-index: -1; /* Coloca el pseudoelemento detrás del contenido principal */
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.nav-links a:hover{
+    color: #5B86BB;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.menu span {
+    height: 2px;
+    width: 30px;
+    background: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 200px; /* Ajusta el ancho del menú desplegable */
+        background-color: #181818;
+        position: fixed; /* Fija la posición del menú */
+        top: 55px; /* Alinea el menú al inicio de la pantalla */
+        right: 0px; /* Alinea el menú a la izquierda */
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+        padding: 60px 0 10px; /* Añade espacio superior para el header y padding inferior */
+        z-index: 999; /* Asegura que el menú esté por encima del contenido */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+        text-align: center; /* Centra los elementos del menú */
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    body.nav-active {
+        overflow: hidden; /* Evita el desplazamiento de la página cuando el menú está abierto */
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;;
+    padding: 20px;
+}
+
+.column {
+    max-width: 100%; /* Asegura que cada columna no exceda su contenido */
+    padding: 0 10px;
+}
+
+.links {
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 100%;
+    width: auto;
+    border: 1px solid #5B83BB;
+    border-radius: 50%;
+  }
+
+
+  .social:hover {
+    background-color: #5B83BB;
+  }
+  
+  .social img {
+    height: 80%; 
+    width: 80%;  
+  }
+
+  
+.logo-RMCompleto{
+    width: 100%;
+}
+
+.agradecimiento p {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1vw;
+}
