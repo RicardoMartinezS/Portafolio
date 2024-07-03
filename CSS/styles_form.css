@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  
+
+}
+
+
+
+.form-content {
+  background: 
+    linear-gradient(50deg, rgba(24, 24, 24, 1) 50%, rgba(91, 131, 187, 1)),
+    url(Imagen/bg.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 50px;
+  width: 90%;
+  border-radius: 25px;
+}
+
+.form-content h3 {
+  color: #FFFFFF;
+  font-size: 2vw;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-content: center;
+}
+
+label{
+  font-size: 14px;
+  color: #959595;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+input,textarea{
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 10px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+:focus{
+  outline: 2px solid #5B83BB;
+}
+
+.btn-2{
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #FFFFFF;
+  background-color: #5B83BB;
+  border-radius: 50px;
+}
+  
+.btn-2:hover{
+  background-color: #FFFFFF;
+  color: #5B83BB;
+}
+  
