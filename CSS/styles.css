@@ -239,6 +239,97 @@ margin-top:  5%;
   border-radius: 40px;
 }
 
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #181818; /* Mantiene la coherencia con el fondo */
+}
+
+.about-me-content {
+  max-width: 1000px;
+  background: #1f1f1f; 
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-me-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+.about-me-content h1 {
+  font-size: 2.5rem;
+  color: #5B83BB;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #5B83BB;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.about-me-content p {
+  font-size: 2,5vw;
+  color: #FFFFFF;/* Texto claro sobre fondo oscuro */
+}
+
+
+.job {
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 10px 0;
+  border-top: 1px solid #5B83BB; /* Línea separadora arriba */
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+}
+
+.job-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #E6E6E6;
+  margin: 0;
+}
+
+.job-header .date {
+  font-size: 0.95rem;
+  color: #A0AEC0;
+  font-style: italic;
+}
+
+.organization {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #CCCCCC;
+  font-style: italic;
+}
+
+.about-me-content h2 {
+  font-size: 2.5rem;
+  color: #5B83BB;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 750px){
     .nav-links {
         display: none;
